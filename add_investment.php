@@ -3,6 +3,7 @@
 <head>
 	<title>Add Investment</title>
 </head>
+
 <style type="text/css">
 	* {box-sizing: border-box}
 
@@ -70,6 +71,20 @@ button:hover {
 <body>
 <form action="insert_investment.php" method="post">
   <div class="container">
+    <img class="logo" src="images.png" alt="car logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="addinv.html">ADD INVESTMENT</a></li>
+        <li><a href="add_customers.html">ADD CUSTOMER</a></li>
+        <li><a href="add_investment_portfolios.html">ADD INVESTMENT PORTFOLIO</a></li>
+ 
+      </ul>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
     <h1>Add Investment</h1>
     <p>Please fill in this form to add an investment.</p>
     <hr>
@@ -103,5 +118,17 @@ button:hover {
     </div>
   </div>
 </form>
+<footer>
+  <section class="foot">
+    <h2 class="shift"><b>Follow Us on</b></h2>
+    <ol  style="list-style-type:none">
+
+    <li class="social-icon fab fa-facebook-f"></li>
+    <li class="social-icon fab fa-twitter"></li>
+    <li class="social-icon fab fa-instagram"></li>
+<li> &copy; Copyright </li>
+</ol>
+  </section>
+</footer>
 </body>
 </html>

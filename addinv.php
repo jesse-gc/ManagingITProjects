@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Add Customers</title>
+	<title>Add Investment</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="add_customers.css" />
-  <script src="https://kit.fontawesome.com/09e0f9fcdf.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/09e0f9fcdf.js" crossorigin="anonymous"></script>
+  
+    <link rel="index" href="index.html">
 </head>
 <style type="text/css">
 	* {box-sizing: border-box}
-
   input[type=text] {
   width: 20%;
   padding: 15px;
@@ -16,17 +19,14 @@
   border: none;
   background: #f1f1f1;
 }
-
 input[type=text]:focus {
   background-color: #ddd;
   outline: none;
 }
-
 hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
 }
-
 button {
   background-color: green;
   color: white;
@@ -36,32 +36,33 @@ button {
   cursor: pointer;
   width: 100%;
   opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border: 3px solid green; 
+  
 }
-
 button:hover {
   opacity:1;
 }
-
 .cancelbtn {
   padding: 14px 20px;
   background-color: red;
+      
 }
-
 .cancelbtn, .signupbtn {
   float: left;
   width: 10%;
 }
-
 .container {
   padding: 16px;
 }
-
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
 }
-
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
   .cancelbtn, .signupbtn {
@@ -70,7 +71,12 @@ button:hover {
 }
 </style>
 <body>
-<form action="insert_customers.php" method="post">
+    
+    
+    
+        
+    
+<form action="insert_investment.php" method="post" style="text-align: center;">
   <div class="container">
     <img class="logo" src="images.png" alt="car logo">
     <nav>
@@ -82,23 +88,29 @@ button:hover {
  
       </ul>
     </nav>
-    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Add Investment</h1>
+    <p>Please fill in this form to add an investment.</p>
     <hr>
+    <label for="cusid"><b>Customer ID</b></label>
+    <input type="text" placeholder="Enter Customer ID" name="cusid" required>
     <br>
+    <label for="name"><b>Investment Name</b></label>
+    <input type="text" placeholder="Enter Investment Name" name="name" required>
     <br>
+    <label for="amount"><b>Investment Amount</b></label>
+    <input type="text" placeholder="Enter Investment Amount" name="amount" required>
     <br>
+    <label for="gain"><b>Investment Gain</b></label>
+    <input type="text" placeholder="Enter Investment Gain" name="gain" required>
     <br>
-    <h1>Add Customer</h1>
-    <p>Please fill in this form to add a customer.</p>
-    <label for="name"><b>Customer Name</b></label>
-    <input type="text" placeholder="Enter Name" name="name" required>
-
-    <br>
-
-    <label for="email"><b>Customer Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
-
-    <div class="clearfix">
+    <label for="loss"><b>Investment Loss</b></label>
+    <input type="text" placeholder="Enter Investment Loss" name="loss" required>
+    <div class="clearfix" >
       <button type="button" class="cancelbtn">Cancel</button>
       <button type="submit" class="signupbtn">Sign Up</button>
     </div>
@@ -116,6 +128,5 @@ button:hover {
 </ol>
   </section>
 </footer>
-
 </body>
 </html>

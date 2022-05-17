@@ -3,7 +3,117 @@ body {
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 800;
 }
+header{
+	background: black;
+  }
+
+
+  header::after{
+	content: '';
+	display: table;
+	clear: both;
+  }
 .container {
     background: black;
     color: white;
 }
+.logo{
+	float:left;
+	padding: 10px 10px;
+	height: 120px;
+	width: 300px;
+	position: relative;
+
+  top: -2px;
+  
+  }
+footer{
+	border-top: 10px lightblue double;
+	clear: both;
+	  background: black;
+  }
+  
+  footer {
+	text-align: center;
+  
+	color: #fff;
+	padding: 20px;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+  }
+  .social-icon{
+	margin:20px 10px;
+	position: relative;
+	
+  
+  
+  }
+  .index{
+	padding: 10px 100px;
+	margin:20px 10px;
+	float: center;
+	position: relative;
+	width: 50%;
+  height: 10%;
+  left: 20%;
+}
+nav{
+	float: right;
+	position: sticky;
+	top:20px;
+	right:70px;
+	margin:0px;
+  }
+
+  nav ul {
+	margin:0;
+	padding:0;
+	list-style: none;
+  }
+
+   nav li{
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 45px;
+  position: relative;
+  bottom: 50px;
+  }
+
+  nav a {
+	color: skyblue;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+
+  }
+
+  nav a:hover{
+	color: skyblue;
+  }
+  nav a::before{
+	content: '';
+	display:block;
+	height: 5px;
+	background-color: black;
+	position: absolute;
+	top:0;
+	width: 0;
+   /* transition: all ease-in-out 200ms;*/
+	}
+  nav a:hover::before{
+	width: 100%;
+  }
+  .hire{
+		 color:  black;
+		 position: relative;
+		padding: 100px;
+		float: center;
+		 font-family: 'Comic Neue', cursive;
+		 font-weight: 700;
+		 font-size: 40px;
+		 width: 100%;
+		 left: 20%;
+	}
