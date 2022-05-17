@@ -81,10 +81,10 @@ button:hover {
     <img class="logo" src="images.png" alt="car logo">
     <nav>
       <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="addinv.html">ADD INVESTMENT</a></li>
-        <li><a href="add_customers.html">ADD CUSTOMER</a></li>
-        <li><a href="add_investment_portfolios.html">ADD INVESTMENT PORTFOLIO</a></li>
+      <li><a href="index.php">HOME</a></li>
+        <li><a href="addinv.php">ADD INVESTMENT</a></li>
+        <li><a href="add_customers.php">ADD CUSTOMER</a></li>
+        <li><a href="add_investment_portfolios.php">ADD INVESTMENT PORTFOLIO</a></li>
  
       </ul>
     </nav>
